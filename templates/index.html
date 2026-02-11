@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NC Medicaid Code Tables Extractor</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NC Medicaid Code Tables Extractor</h1>
+        <p class="subtitle">Extract CPT/HCPCS code tables from NC Medicaid clinical coverage policy PDFs.</p>
+
+        <div class="controls">
+            <button id="btn-load" onclick="loadPolicies()">Load Policies</button>
+            <span id="status" class="status"></span>
+        </div>
+
+        <div id="policy-section" class="hidden">
+            <div class="policy-header">
+                <label><input type="checkbox" id="select-all" onchange="toggleSelectAll()"> Select All</label>
+                <span id="policy-count"></span>
+            </div>
+            <div id="policy-list" class="policy-list"></div>
+            <button id="btn-extract" onclick="extractSelected()">Extract Code Tables</button>
+        </div>
+
+        <div id="progress-section" class="hidden">
+            <div class="progress-bar">
+                <div id="progress-fill" class="progress-fill"></div>
+            </div>
+            <span id="progress-text" class="progress-text"></span>
+        </div>
+
+        <div id="results-section" class="hidden">
+            <div class="results-header">
+                <h2>Results</h2>
+                <button id="btn-csv" onclick="downloadCSV()">Download CSV</button>
+            </div>
+            <div id="results-container"></div>
+        </div>
+    </div>
+
+    <script>
+        let allPolicies = [];
+        let extractedResults = [];
+
+        function setStatus(msg, type) {
+            const el = document.getElementById("status");
+            el.textContent = msg;
+            el.className = "status " + (type || "");
+        }
+
+        async function loadPolicies() {
+            const btn = document.getElementById("btn-load");
+            btn.disabled = true;
+            setStatus("Loading policies...", "loading");
+
+            try {
+                const resp = await fetch("/api/policies");
+                const data = await resp.json();
+                if (data.error) {
+                    setStatus("Error: " + data.error, "error");
+                    btn.disabled = false;
+                    return;
+                }
+
+                allPolicies = data.policies;
+                renderPolicyList();
+                document.getElementById("policy-section").classList.remove("hidden");
+                setStatus(allPolicies.length + " policies loaded.", "success");
+            } catch (e) {
+                setStatus("Failed to load policies: " + e.message, "error");
+            }
+            btn.disabled = false;
+        }
+
+        function renderPolicyList() {
+            const list = document.getElementById("policy-list");
+            list.innerHTML = "";
+            allPolicies.forEach((p, i) => {
+                const label = document.createElement("label");
+                label.className = "policy-item";
+                label.innerHTML = '<input type="checkbox" data-index="' + i + '"> ' + escapeHtml(p.name);
+                list.appendChild(label);
+            });
+            document.getElementById("policy-count").textContent = allPolicies.length + " policies";
+        }
+
+        function escapeHtml(text) {
+            const d = document.createElement("div");
+            d.textContent = text;
+            return d.innerHTML;
+        }
+
+        function toggleSelectAll() {
+            const checked = document.getElementById("select-all").checked;
+            document.querySelectorAll("#policy-list input[type=checkbox]").forEach(cb => {
+                cb.checked = checked;
+            });
+        }
+
+        function getSelectedPolicies() {
+            const selected = [];
+            document.querySelectorAll("#policy-list input[type=checkbox]:checked").forEach(cb => {
+                const idx = parseInt(cb.dataset.index);
+                selected.push(allPolicies[idx]);
+            });
+            return selected;
+        }
+
+        function countTotalRows(results) {
+            let total = 0;
+            for (const r of results) {
+                total += (r.rows || []).length;
+            }
+            return total;
+        }
+
+        async function extractSelected() {
+            const selected = getSelectedPolicies();
+            if (selected.length === 0) {
+                setStatus("Please select at least one policy.", "error");
+                return;
+            }
+
+            const btn = document.getElementById("btn-extract");
+            btn.disabled = true;
+            extractedResults = [];
+
+            const progressSection = document.getElementById("progress-section");
+            progressSection.classList.remove("hidden");
+            const progressFill = document.getElementById("progress-fill");
+            const progressText = document.getElementById("progress-text");
+
+            const container = document.getElementById("results-container");
+            container.innerHTML = "";
+            document.getElementById("results-section").classList.remove("hidden");
+
+            // Process policies in batches
+            const batchSize = 3;
+            for (let i = 0; i < selected.length; i += batchSize) {
+                const batch = selected.slice(i, i + batchSize);
+                const pct = Math.round((i / selected.length) * 100);
+                progressFill.style.width = pct + "%";
+                progressText.textContent = "Processing " + (i + 1) + " of " + selected.length + "...";
+                setStatus("Extracting...", "loading");
+
+                try {
+                    const resp = await fetch("/api/extract", {
+                        method: "POST",
+                        headers: {"Content-Type": "application/json"},
+                        body: JSON.stringify({policies: batch}),
+                    });
+                    const data = await resp.json();
+                    if (data.results) {
+                        extractedResults.push(...data.results);
+                        data.results.forEach(renderResult);
+                    }
+                } catch (e) {
+                    batch.forEach(p => {
+                        extractedResults.push({
+                            name: p.name, url: p.url,
+                            status: "error", error: e.message, headers: [], rows: []
+                        });
+                    });
+                }
+            }
+
+            progressFill.style.width = "100%";
+            const totalRows = countTotalRows(extractedResults);
+            const withData = extractedResults.filter(r => r.status === "success").length;
+            progressText.textContent = "Done.";
+            setStatus(
+                "Extracted " + totalRows + " codes from " + withData + " of " + selected.length + " policies.",
+                "success"
+            );
+            btn.disabled = false;
+        }
+
+        function renderResult(result) {
+            const container = document.getElementById("results-container");
+
+            if (result.status === "error") {
+                const div = document.createElement("div");
+                div.className = "result-policy";
+                div.innerHTML =
+                    '<h3 class="policy-name">' + escapeHtml(result.name) + '</h3>' +
+                    '<p class="error-cell">Error: ' + escapeHtml(result.error || "Unknown error") + '</p>';
+                container.appendChild(div);
+                return;
+            }
+
+            if (result.status === "no_table" || !result.rows || result.rows.length === 0) {
+                const div = document.createElement("div");
+                div.className = "result-policy";
+                div.innerHTML =
+                    '<h3 class="policy-name">' + escapeHtml(result.name) + '</h3>' +
+                    '<p class="none-cell">No code tables found</p>';
+                container.appendChild(div);
+                return;
+            }
+
+            const div = document.createElement("div");
+            div.className = "result-policy";
+            div.innerHTML = '<h3 class="policy-name">' + escapeHtml(result.name) +
+                ' <span class="row-count">(' + result.rows.length + ' codes)</span></h3>';
+
+            const table = document.createElement("table");
+
+            const thead = document.createElement("thead");
+            const headTr = document.createElement("tr");
+            result.headers.forEach(h => {
+                const th = document.createElement("th");
+                th.textContent = h;
+                headTr.appendChild(th);
+            });
+            thead.appendChild(headTr);
+            table.appendChild(thead);
+
+            const tbody = document.createElement("tbody");
+            result.rows.forEach(row => {
+                const tr = document.createElement("tr");
+                row.forEach(cell => {
+                    const td = document.createElement("td");
+                    td.textContent = cell;
+                    tr.appendChild(td);
+                });
+                tbody.appendChild(tr);
+            });
+            table.appendChild(tbody);
+
+            div.appendChild(table);
+            container.appendChild(div);
+        }
+
+        async function downloadCSV() {
+            const withRows = extractedResults.filter(r => r.rows && r.rows.length > 0);
+            if (withRows.length === 0) {
+                setStatus("No data to export.", "error");
+                return;
+            }
+
+            try {
+                const resp = await fetch("/api/export-csv", {
+                    method: "POST",
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify({results: withRows}),
+                });
+                const blob = await resp.blob();
+                const url = URL.createObjectURL(blob);
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = "medicaid_code_tables.csv";
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                URL.revokeObjectURL(url);
+                setStatus("CSV downloaded.", "success");
+            } catch (e) {
+                setStatus("CSV export failed: " + e.message, "error");
+            }
+        }
+    </script>
+</body>
+</html>
