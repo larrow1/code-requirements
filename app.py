@@ -59,20 +59,53 @@ def get_policies():
 
 _HCPCS_RE = re.compile(r"^[A-Za-z]\d{4}$")
 _CPT_RE = re.compile(r"^\d{5}$")
+_REVENUE_RE = re.compile(r"^\d{3,4}$")
+# Broad pattern for peek/validation: matches CPT (5 digits),
+# HCPCS (letter + 4 digits), revenue codes (3-4 digits or
+# RC + 4 digits), and similar short alphanumeric codes.
+_CODE_LIKE_RE = re.compile(r"^[A-Za-z]{0,2}\d{3,5}$")
+_DATE_RE = re.compile(r"^\d{1,2}/\d{1,2}/\d{2,4}$")
+_MAX_CODE_HEADER_LEN = 50
 
 
 def _classify_code(code, header_hint):
-    """Return 'CPT' or 'HCPCS' based on the code value and column header."""
+    """Return 'CPT', 'HCPCS', or 'Revenue' based on the code value and column header."""
     h = header_hint.lower()
     if "hcpcs" in h:
         return "HCPCS"
     if "cpt" in h:
         return "CPT"
+    if "revenue" in h:
+        return "Revenue"
     if _HCPCS_RE.match(code):
         return "HCPCS"
     if _CPT_RE.match(code):
         return "CPT"
+    if _REVENUE_RE.match(code):
+        return "Revenue"
     return "CPT"
+
+
+def _is_policy_revision_table(table):
+    """Detect policy implementation/revision history tables.
+
+    These tables have headers like ['Date', 'Section Revised', 'Change'] on
+    their first page, and on continuation pages the first data row becomes
+    ``table[0]`` with a date in the first cell.
+    """
+    if not table or not table[0]:
+        return False
+    first_row = [(cell or "").strip().lower() for cell in table[0]]
+    # Explicit header pattern: Date + Section Revised / Change
+    if any("date" in c for c in first_row) and any(
+        "section" in c or "change" in c or "revised" in c for c in first_row
+    ):
+        return True
+    # Continuation page: first cell is a date like 10/01/2014
+    first_cell = (table[0][0] or "").strip()
+    if _DATE_RE.match(first_cell):
+        return True
+    return False
 
 
 def extract_code_tables(pdf_url):
@@ -99,6 +132,10 @@ def extract_code_tables(pdf_url):
                     if not table or not table[0]:
                         continue
 
+                    # Skip policy implementation / revision history tables
+                    if _is_policy_revision_table(table):
+                        continue
+
                     # Build original headers (strip whitespace, collapse \n → space)
                     raw_headers = [
                         re.sub(r"\s+", " ", (cell or "").strip())
@@ -107,46 +144,206 @@ def extract_code_tables(pdf_url):
                     lower_headers = [h.lower() for h in raw_headers]
 
                     # Identify a code column (skip ICD-10)
+                    # Also reject headers that are too long — real code column
+                    # headers (e.g. "CPT Code") are short, while long text is a
+                    # data cell that happens to mention the word "code".
                     code_col = None
+                    is_continuation = False
                     for i, h in enumerate(lower_headers):
                         if "code" in h:
                             if "icd-10" in h or "icd10" in h:
                                 continue
+                            if len(raw_headers[i]) > _MAX_CODE_HEADER_LEN:
+                                continue
                             code_col = i
                             break
+
                     if code_col is None:
-                        continue
+                        # Fallback: detect headerless continuation
+                        # tables where rows are data, not headers.
+                        first_cell_val = (table[0][0] or "").strip()
+                        first_line = first_cell_val.split("\n")[0].strip()
 
-                    code_header = raw_headers[code_col]
+                        if _CODE_LIKE_RE.match(first_line):
+                            # Row 0 starts with a code → continuation
+                            code_col = 0
+                            is_continuation = True
+                        elif not first_cell_val:
+                            # Row 0 cell 0 is empty → may be a page
+                            # break mid-row; check later rows.
+                            for probe_row in table[1:]:
+                                if not probe_row:
+                                    continue
+                                pv = (probe_row[0] or "").strip()
+                                pl = pv.split("\n")[0].strip()
+                                if _CODE_LIKE_RE.match(pl):
+                                    code_col = 0
+                                    is_continuation = True
+                                    break
 
-                    # Non-code columns with non-empty headers
-                    other_indices = [
-                        i for i in range(len(raw_headers))
-                        if i != code_col and raw_headers[i]
-                    ]
-                    other_headers = [raw_headers[i] for i in other_indices]
+                        if code_col is None:
+                            continue
 
-                    # Extract rows, splitting newline-separated codes
+                    # For continuation tables the first row is data,
+                    # so derive code_header from the first actual code.
+                    if is_continuation:
+                        for probe_row in table:
+                            if not probe_row:
+                                continue
+                            pv = (probe_row[0] or "").split("\n")[0].strip()
+                            if _CODE_LIKE_RE.match(pv):
+                                code_header = _classify_code(pv, "")
+                                break
+                        else:
+                            code_header = ""
+                    else:
+                        code_header = raw_headers[code_col]
+
+                    # Rows to iterate: skip header row for normal
+                    # tables; include row 0 for continuation tables.
+                    data_start = 0 if is_continuation else 1
+
+                    # Check if all non-code column headers are empty.
+                    # For continuation tables raw_headers holds data,
+                    # so this is always effectively True.
+                    all_other_empty = is_continuation or all(
+                        not raw_headers[i]
+                        for i in range(len(raw_headers))
+                        if i != code_col
+                    )
+
+                    # When all other headers are blank (or this is a
+                    # continuation table), peek at the data to decide
+                    # if those columns hold additional codes
+                    # (multi-column layout) or descriptions.
+                    multi_col_codes = False
+                    if all_other_empty:
+                        for row in table[data_start:]:
+                            if not row:
+                                continue
+                            for i in range(len(row)):
+                                if i == code_col:
+                                    continue
+                                cell = (row[i] or "").strip()
+                                if not cell:
+                                    continue
+                                first_line = cell.split("\n")[0].strip()
+                                multi_col_codes = bool(
+                                    _CODE_LIKE_RE.match(first_line)
+                                )
+                                break
+                            else:
+                                continue
+                            break
+
                     seen = set()
                     data_rows = []
-                    for row in table[1:]:
-                        if not row:
-                            continue
-                        code_val = (row[code_col] or "").strip() if code_col < len(row) else ""
-                        if not code_val:
-                            continue
-                        other_vals = [
-                            (row[i] or "").strip() if i < len(row) else ""
-                            for i in other_indices
-                        ]
-                        for code_line in code_val.split("\n"):
-                            code_line = code_line.strip()
-                            if not code_line:
+
+                    if multi_col_codes:
+                        # --- Multi-column code table ---
+                        table_note = ""
+                        for row in table[data_start:]:
+                            if not row:
                                 continue
-                            row_key = (code_line, *other_vals)
-                            if row_key not in seen:
-                                seen.add(row_key)
-                                data_rows.append((code_line, other_vals))
+                            cells = [
+                                (row[i] or "").strip()
+                                for i in range(len(row))
+                            ]
+                            non_empty = [c for c in cells if c]
+                            if not non_empty:
+                                continue
+
+                            # A row with a single non-empty cell whose first
+                            # line doesn't look like a code is descriptive
+                            # text that applies to every code in the table.
+                            first_token = non_empty[0].split("\n")[0].strip()
+                            looks_like_code = bool(
+                                _CODE_LIKE_RE.match(first_token)
+                            )
+                            if len(non_empty) == 1 and not looks_like_code:
+                                table_note = re.sub(
+                                    r"\s+", " ", non_empty[0]
+                                )
+                                continue
+
+                            for cell in cells:
+                                if not cell:
+                                    continue
+                                for code_line in cell.split("\n"):
+                                    code_line = code_line.strip()
+                                    if not code_line:
+                                        continue
+                                    # Only accept lines that look
+                                    # like valid codes.
+                                    if not _CODE_LIKE_RE.match(code_line):
+                                        continue
+                                    if code_line not in seen:
+                                        seen.add(code_line)
+                                        data_rows.append(
+                                            (code_line, [])
+                                        )
+
+                        # Apply the note uniformly to all rows.
+                        if table_note:
+                            data_rows = [
+                                (c, [table_note]) for c, _ in data_rows
+                            ]
+                        other_headers = (
+                            ["Note"] if table_note else []
+                        )
+                    else:
+                        # --- Single code-column table ---
+                        # Include unnamed columns as "Description".
+                        # For continuation tables raw_headers holds
+                        # data, not real headers, so always label
+                        # non-code columns "Description".
+                        other_indices = [
+                            i for i in range(len(raw_headers))
+                            if i != code_col
+                            and (raw_headers[i]
+                                 or all_other_empty
+                                 or is_continuation)
+                        ]
+                        if is_continuation:
+                            other_headers = [
+                                "Description" for _ in other_indices
+                            ]
+                        else:
+                            other_headers = [
+                                raw_headers[i] or "Description"
+                                for i in other_indices
+                            ]
+
+                        for row in table[data_start:]:
+                            if not row:
+                                continue
+                            code_cell = (
+                                (row[code_col] or "").strip()
+                                if code_col < len(row) else ""
+                            )
+                            if not code_cell:
+                                continue
+                            other_vals = [
+                                (row[i] or "").strip()
+                                if i < len(row) else ""
+                                for i in other_indices
+                            ]
+                            # Extract only lines that look like
+                            # valid codes; the code cell may
+                            # contain embedded descriptions
+                            # (e.g. "0651\nRoutine Home\nCare").
+                            for code_line in code_cell.split("\n"):
+                                code_line = code_line.strip()
+                                if not code_line:
+                                    continue
+                                if not _CODE_LIKE_RE.match(code_line):
+                                    continue
+                                row_key = (code_line, *other_vals)
+                                if row_key not in seen:
+                                    seen.add(row_key)
+                                    data_rows.append(
+                                        (code_line, other_vals)
+                                    )
 
                     if data_rows:
                         raw_tables.append((code_header, other_headers, data_rows))

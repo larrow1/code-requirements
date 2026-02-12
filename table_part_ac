@@ -1,0 +1,80 @@
+=== Page 21, Table 1 ===
+  Row 0: ['4/15/2023', 'All Sections and\nAttachment(s)', 'Updated policy template language due to North Carolina\nHealth Choice Program’s move to Medicaid. Policy posted\n4/15/2023 with an effective date of 4/1/2023.']
+  Row 1: ['04/15/2025', 'Section 1.1', 'Used current CPT language for Comprehensive Preventive\nMedicine evaluation used throughout policy\nRemoved FP Medicaid serves eligible beneficiaries regardless\nof their age or gender\nc. Pharmacist per state protocol']
+  Row 2: ['04/15/2025', 'Section 2.2.2', 'Changed Undocumented Aliens to non-citizens to comply with\ncurrent standard language']
+  Row 3: ['04/15/2025', 'Section 3.2.1', '(2) Added Oral Contraceptives and transdermal patches per the\nNorth Carolina State Health Director’s Standing Order\n(3) Added emergency contraception\n(4) Clarified the removal of LARC’s\n(5) Added condoms, spermicides and vaginal rings\n(7) Added “listed in Clinical Coverage Policy 9 Outpatient\nPharmacy Program”\n(12) Added that agencies are to follow the most current HPV\nrecommendations set forth by the ACIP\n(13) Addition of four depression screenings per 365 rolling\ncalendar days as covered services\n(14) Covered sterilization procedures']
+  Row 4: ['04/15/2025', 'Section 3.2.2', 'Added None Apply']
+  Row 5: ['04/15/2025', 'Section 3.3', 'Added NC Medicaid encourages family planning providers to\noffer screening for hypertension, sexually transmitted diseases\nand infections and cancer as part of current A and B USPSTF\nrecommendations. Deleted specific screenings.']
+  Row 6: ['04/15/2025', 'Section 4.2', 'Clarified Medicaid for Family Planning Medicaid and added\ncervical caps']
+  Row 7: ['04/15/2025', 'Section 4.2.2 5.', 'Added “medically necessary removal of contraceptive devices”\nand removed “or complications caused by or following a family\nplanning procedure”\nRemoved “Complications”\nClarified under note what hospital costs are excluded from the\nbeneficiary’s responsibility']
+  Row 8: ['04/15/2025', 'Section 5.3', '(a) Clarified that FP beneficiaries are allowed one\nComprehensive Preventive evaluation or one Annual\nAssessment per 365 calendar days. Added “If the beneficiary\nhas had a comprehensive preventive medicine evaluation or']
+
+=== Page 22, Table 1 ===
+  Row 0: ['', '', 'postpartum exam in the previous 365 days, the beneficiary is\nnot required to have another comprehensive evaluation prior to\nreceiving Family Planning services.']
+  Row 1: ['04/15/2025', 'Attachment A', 'B.1.removed terms male and female\nC.1. Added CPT codes 58562 effective date 05/01/2025,\nAdded 87626 and 96127 to table.\nAdded A4267 and A4268 to the HCPCS table effective date\n09/01/2024\nAdded: Note: Male and female condoms are reimbursable in\nthe office setting. Spermicides are available from the pharmacy\nwith a prescription.\nAdded Inter-periodic visits include behavioral health screening\nF. Outpatient services may be used for IUD removal and\nUltrasounds for IUD complications and missing strings']
+  Row 2: ['04/15/2025', 'Attachment B', 'Clarified Annual (Focused) and Comprehensive Preventive\nEvaluation are billed using the current AMA CPT definitions\nfor each.\nClarified what is allowed at the Initial Assessment and that no\nclaim is filed if beneficiary does not qualify for services\n(B) Clarified that HPV may be administered at inter-periodic\nvisits.\n(Encounter for depression screening) or Diagnosis code Z13.32\n(Encounter for screening for maternal depression) in\ncombination with CPT code 96127 (Brief emotional or\nbehavioral assessment with scoring and documentation, per\nstandardized instrument) in addition to a family planning\ndiagnosis.\nAdded point of care rapid HIV and syphilis coverage effective\ndate 01/01/24\nAdded the coverage of condoms and spermicides\nClarified the billing of code 99211\nRemoved specific facilities for IUD complications']
+  Row 3: ['04/15/2025', 'Attachment C', 'Clarified language']
+
+=== Page 23, Table 1 ===
+  Row 0: ['ICD-10-CM Codes', '']
+  Row 1: ['Z30.011\nZ30.012\nZ30.013\nZ30.014\nZ30.015\nZ30.016\nZ30.017\nZ30.018\nZ30.019\nZ30.02\nZ30.09\nZ30.2\nZ30.40\nZ30.41', 'Z30.42\nZ30.430\nZ30.431\nZ30.432\nZ30.433\nZ30.44\nZ30.45\nZ30.46\nZ30.49\nZ30.8\nZ30.9\nZ31.61\nZ31.69']
+
+=== Page 24, Table 1 ===
+  Row 0: ['CPT Code(s)', None, None, None, '']
+  Row 1: ['00851\n00921\n00952\n11976\n11981\n11982\n11983\n17000\n36415\n54050\n56501\n57170\n58300\n58301\n58562\n58600\n58615\n58661\n58670\n58671\n76830\n76856\n76857\n80053\n81000\n81001\n81002\n81003\n81005\n81007', '81015\n81025\n82120\n84702\n84703\n85013\n85014\n85018\n85027\n86592\n86593\n86631\n86632\n86689\n86694\n86695\n86696\n86701\n86702\n86703\n86704\n86706\n86780\n86803\n86804\n87070\n87071\n87081\n87110', '87207\n87210\n87220\n87270\n87273\n87274\n87285\n87320\n87340\n87389\n87480\n87490\n87491\n87492\n87510\n87516\n87517\n87520\n87521\n87522\n87528\n87529\n87530\n87534\n87535\n87536\n87563\n87590\n87591', '87592\n87623\n87624\n87625\n87626\n87660\n87661\n87798\n87810\n87850\n88141\n88142\n88143\n88147\n88148\n88150\n88152\n88153\n88155\n88164\n88165\n88166\n88167\n88174\n88175\n88302\n89310\n90460\n90471\n90651', '93000\n93010\n96372\n96127\n99050\n99051\n99053\n99202\n99203\n99204\n99205\n99211\n99212\n99213\n99214\n99215\n99241\n99242\n99243\n99244\n99245\n99383\n99384\n99385\n99386\n99387\n99393\n99394\n99395\n99396\n99397']
+
+=== Page 25, Table 1 ===
+  Row 0: ['CPT Codes Eligible for Telehealth Services', None]
+  Row 1: ['99211', '99241']
+  Row 2: ['99212', '99242']
+  Row 3: ['99213', '99243']
+  Row 4: ['99214', '99244']
+  Row 5: ['99215', '99245']
+
+=== Page 25, Table 2 ===
+  Row 0: ['HCPCS Code(s)', None]
+  Row 1: ['A4267\nA4268\nJ1050\nJ7296\nJ7297\nJ7298', 'J7300\nJ7301\nJ7307\nS4993']
+
+=== Page 25, Table 3 ===
+  Row 0: ['Revenue Code(s)', None, None, None]
+  Row 1: ['RC0250\nRC0251\nRC0252\nRC0254\nRC0255\nRC0258\nRC0259\nRC0270\nRC0271\nRC0272', 'RC0278\nRC0279\nRC0300\nRC0301\nRC0305\nRC0306\nRC0307\nRC0309\nRC0310\nRC0311', 'RC0312\nRC0314\nRC0319\nRC0320\nRC0324\nRC0329\nRC0360\nRC0361\nRC0369\nRC0370', 'RC0371\nRC0372\nRC0379\nRC0490\nRC0499\nRC0510\nRC0519\nRC0730\nRC0739']
+
+=== Page 28, Table 1 ===
+  Row 0: ['Annual Assessment Office Visit Codes', None]
+  Row 1: ['99202\n99203\n99204\n99205', '99212\n99213\n99214\n99215']
+
+=== Page 29, Table 1 ===
+  Row 0: ['Comprehensive Preventive Medicine\nEvaluation Codes', None]
+  Row 1: ['99383\n99384\n99385\n99386\n99387', '99393\n99394\n99395\n99396\n99397']
+
+=== Page 30, Table 1 ===
+  Row 0: ['Inter-Periodic Visit', None]
+  Row 1: ['99202\n99203\n99204\n99205', '99211\n99212\n99213\n99214\n99215']
+
+=== Page 30, Table 2 ===
+  Row 0: ['Office After-Hours Visit']
+  Row 1: ['99050\n99051\n99053']
+
+=== Page 30, Table 3 ===
+  Row 0: ['Urinalysis']
+  Row 1: ['81000 81003\n81001 81005\n81002 81007\n81003 81015']
+
+=== Page 31, Table 1 ===
+  Row 0: ['Blood Count']
+  Row 1: ['85013 85018\n85014 85027']
+
+=== Page 31, Table 2 ===
+  Row 0: ['Pap Test', None]
+  Row 1: ['88141\n88142\n88143\n88147\n88148\n88150\n88152\n88153', '88155\n88164\n88165\n88166\n88167\n88174\n88175']
+
+=== Page 31, Table 3 ===
+  Row 0: ['Pregnancy Tests']
+  Row 1: ['81025\n84702\n84703']
+
+=== Page 31, Table 4 ===
+  Row 0: ['Comprehensive Metabolic Panel']
+  Row 1: ['80053']
+
+=== Page 32, Table 1 ===
+  Row 0: ['HIV Screening', None]
+  Row 1: ['86689\n86701\n86702\n86703\n87389', '87534\n87535\n87536']

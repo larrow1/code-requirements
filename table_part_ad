@@ -1,0 +1,80 @@
+
+=== Page 32, Table 2 ===
+  Row 0: ['Hepatitis B Screening']
+  Row 1: ['86704\n86706\n87340\n87516\n87517']
+
+=== Page 32, Table 3 ===
+  Row 0: ['Hepatitis C Screening']
+  Row 1: ['86803\n86804\n87520\n87521\n87522']
+
+=== Page 33, Table 1 ===
+  Row 0: ['Point of care testing (POC)', None]
+  Row 1: ['86780', '86703']
+
+=== Page 33, Table 2 ===
+  Row 0: ['Gonorrhea', None]
+  Row 1: ['87590\n87591', '87592\n87850']
+
+=== Page 33, Table 3 ===
+  Row 0: ['Syphilis']
+  Row 1: ['86592\n86593']
+
+=== Page 33, Table 4 ===
+  Row 0: ['General STI Screening']
+  Row 1: ['87081\n87210']
+
+=== Page 34, Table 1 ===
+  Row 0: ['86631\n86632\n87110\n87270\n87320', '87490\n87491\n87492\n87810']
+  Row 1: ['Herpes', None]
+  Row 2: ['86694\n86695\n86696\n87207\n87273', '87274\n87528\n87529\n87530']
+
+=== Page 34, Table 2 ===
+  Row 0: ['Trichomonas Vaginalis']
+  Row 1: ['87210\n87660\n87661']
+
+=== Page 34, Table 3 ===
+  Row 0: ['Treponema']
+  Row 1: ['86780\n87285']
+
+=== Page 34, Table 4 ===
+  Row 0: ['Papillomavirus']
+  Row 1: ['87623\n87624\n87625']
+
+=== Page 34, Table 5 ===
+  Row 0: ['Bacterial Vaginosis (Gardnerella and Candida)']
+  Row 1: ['87210\n87480\n87510\n82120']
+
+=== Page 34, Table 6 ===
+  Row 0: ['Scabies']
+  Row 1: ['87220']
+  Row 2: ['Miscellaneous']
+  Row 3: ['87798']
+
+=== Page 34, Table 7 ===
+  Row 0: ['Mycoplasma Genitalium']
+  Row 1: ['87563']
+
+=== Page 36, Table 1 ===
+  Row 0: ['Other Screenings or Procedures', None]
+  Row 1: ['17000\n54050\n56501\n87070', '87071\n93000\n93010\n96372']
+
+=== Page 38, Table 1 ===
+  Row 0: ['Medications for the FP Medicaid program require a prescription. All prescriptions for STI\nmedications must document the appropriate ICD-10-CM code.\nFor additional information regarding Sexually Transmitted Diseases (STDs), refer to the Center\nfor Disease Control and Prevention website at https://www.cdc.gov/std', None]
+  Row 1: ['FP Medi caid approved medications', None]
+  Row 2: ['STI Diagnosis', '']
+  Row 3: ['Herpes', 'Acyclovir 200mg, 400mg, 800 mg\nFamciclovir 125mg, 250mg, 500mg\nValacyclovir 500mg, 1.0gm']
+  Row 4: ['Chlamydia', 'Azithromycin, 250mg, 500mg, 1gm\nDoxycycline 100mg\nErythromycin 250mg, 400mg, 500mg, 800mg\nOfloxacin 200mg, 300mg, 400mg\nLevofloxacin 500mg\nT etracycline 250mg, 500mg']
+  Row 5: ['Syphilis', 'Azithromycin 1gm\nBenzathine penicillin G 2.4 million units\nCeftriaxone 250mg\nCiprofloxacin 500mg\nDoxycycline 100mg\nErythromycin 500mg\nTetracycline 500mg']
+  Row 6: ['Gonorrhea', 'Azithromycin 250mg, 500mg, 1gm\nCefixime 400mg\nCeftriaxone 125 mg, 250mg, 500mg\nCefotaxime 500mg\nCefoxitin 2gm with probenecid 1gm\nCiprofloxacin 250mg, 500mg\nCefpodoxime 200 mg\nDoxycycline 100 mg\nGatifloxacin 400mg\nLevofloxacin 250mg\nOfloxacin 400mg\nSulfamethoxazole/TMP\nGentamicin 240mg IM']
+
+=== Page 39, Table 1 ===
+  Row 0: ['Other Sexually\nTransmitted Infections', 'Azithromycin 250mg, 500mg, 1gm\nDoxycycline 100mg\nErythromycin 500mg, 800mg\nGatifloxacin 400mg\nLevofloxacin 250mg, 500mg\nOfloxacin 200mg, 300mg, 400mg\nM oxifloxacin 400 mg']
+  Row 1: ['Candidiasis', 'Butoconazole 2% cream\nFluconazole 50mg, 100mg, 150mg, 200mg\nMiconazole 200mg suppository\nTerconazole 80mg suppository\nTerconazole cream 0.4%, 0.8%']
+  Row 2: ['Trichomoniasis', 'Metronidazole 250mg, 500mg, 750mg, 2gm\nTinidazole 2000mg']
+  Row 3: ['Bacterial vaginosis', 'Metronidazole 250mg, 500mg\nMetronidazole gel 0.75%\nClindamycin cream 2%\nClindamycin oral 150mg, 300mg\nClindamycin ovules 100mg\nTinidazole 2gm, 1 gm, 500mg, 250mg']
+  Row 4: ['Pubic Louse', 'Permethrin 5% cream\nLindane 1% shampoo']
+
+=== Page 40, Table 1 ===
+  Row 0: ['Sterilization Procedure (vasectomy and tubal ligation)']
+  Row 1: ['Antibiotics for sterilization procedures']
+  Row 2: ['Amox TR-K CLV 500-125mg, 1000-62.5\nAmoxicillin 250mg, 500mg\nCephalexin 250mg, 500mg\nCiprofloxacin HCL 250mg, 500mg\nDoxycycline 100mg\nErythromycin ES 400mg\nLevofloxacin 500mg\nMetronidazole 500mg\nPenicillin VK 500mg\nSulfamethoxazole/TMP DS\nAzithromax 250mg']

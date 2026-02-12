@@ -1,0 +1,325 @@
+HTTP Status: 200
+Content length: 507285
+Total pages: 40
+
+=== Page 11, Table 1 ===
+  Row 0: ['Date', 'Section Revised', 'Change']
+  Row 1: ['10/01/2014', 'All sections and\nattachment(s)', 'New policy documenting current Medicaid FP and NCHC\ncoverage. Family Planning Waiver (FPW) demonstration project\nbegan operation October 1, 2005. Information incorporated\nthroughout this policy referred to as the “Be Smart” program was\napproved by CMS on June 7, 2013 to convert the FPW project to\na State Plan Amendment (SPA) under the Affordable Care Act\n(ACA) legislation.']
+  Row 2: ['05/01/2015', 'Attachment A', 'Added updated CPT codes 87623, 87624, and 87625 to replace\nCPT code 87621']
+  Row 3: ['05/01/2015', 'Attachment A', 'Added Revenue Codes 0301 and 0302']
+  Row 4: ['05/01/2015', 'Attachment B', 'Added sections “Billing the Beneficiary” and “Emergency\nDepartments and Emergency Room Services” to further clarify\nprogram services and non-covered services']
+  Row 5: ['05/01/2015', 'Attachment B\nSection E (4)', 'Repeat Pap for Insufficient Cells information added']
+  Row 6: ['05/01/2015', 'Attachment B\nSection F', 'Pharmacy –Post operative medications for sterilization\ninformation added']
+  Row 7: ['05/01/2015', 'Attachment B\nSection I', 'Clarified “Miscellaneous Billing Instructions” for contraceptive\nmethods and devices.']
+  Row 8: ['05/01/2015', 'Attachment B\nSection J (5)', 'Specific billing instruction for Private Providers added']
+  Row 9: ['05/01/2015', 'Attachment B\nSection K (8)', 'Specific billing instructions for FQHCs and RHCs added']
+  Row 10: ['05/01/2015', 'Attachment B\nSection L (6)', 'Specific billing instructions to LHDs added']
+  Row 11: ['05/01/2015', 'Attachment B\nSection M (6)', 'Specific billing instructions to Outpatient Hospitals added']
+  Row 12: ['05/01/2015', 'Attachment B\nSection N (6)', 'Specific billing instructions to Outpatient only Pharmacies added']
+  Row 13: ['05/01/2015', 'Attachment C', 'Added “Be Smart” Family Planning Program Billing Codes']
+  Row 14: ['05/01/2015', 'Attachment D', 'Added “Be Smart” STI Medications']
+  Row 15: ['05/01/2015', 'Attachment E', 'Added Postoperative Sterilization Medications list']
+  Row 16: ['05/01/2015', 'Attachment F', 'Added Primary Care “Safety Net” Providers']
+  Row 17: ['08/01/2015', 'Attachment D', 'Added additional medications to the list of “Be Smart” STI\nMedications to reflect current provider practice']
+  Row 18: ['10/01/2015', 'All Sections and\nAttachments', 'Updated policy template language and added ICD-10 codes to\ncomply with federally mandated 10/1/2015 implementation where\napplicable.']
+  Row 19: ['11/15/2015', 'Attachment C', 'Changed, “Providers must include the ICD-10-CM Diagnosis\n042 as the secondary diagnosis on the appropriate claim,” to\n“Providers must include the ICD-10-CM Diagnosis B20 as the\nsecondary diagnosis on the appropriate claim.” This amendment\nis clarification of information from ICD-10 transition.']
+
+=== Page 12, Table 1 ===
+  Row 0: ['02/01/2016', 'Attachments A', 'Consolidated “Be Smart” comprehensive list of ICD-10-CM\ndiagnosis codes from Attachment B with the list in Attachment A.']
+  Row 1: ['02/01/2016', 'Attachments B', 'Deleted “Be Smart” comprehensive list of ICD-10-CM diagnosis\ncodes in Attachment B.']
+  Row 2: ['02/10/2015', 'Attachment A', 'Corrected code Z00.89 to Z01.89']
+  Row 3: ['04/01/2016', 'Attachments A', 'Added Z11.4 to list of MAFDN ICD-10-CM diagnosis codes.']
+  Row 4: ['04/01/2016', 'Attachments A', 'Added J7297 and J7298 to list of MAFDN HCPCS codes, already\nin NCTracks for MAFDN, but omitted from the Family Planning\nServices policy. Deleted code J7302.']
+  Row 5: ['04/01/2016', 'Attachment C', 'Replaced diagnosis code B20 with diagnosis code Z11.4']
+  Row 6: ['04/01/2016', 'Attachment C', 'Added J7297 and J7298 to list of codes for IUDs. Deleted code\nJ7302 from this list.']
+  Row 7: ['04/01/2016', 'Attachment C', 'Added J7297 and J7298 to list of codes for Family Planning\nSupplies and Devices. Deleted duplicate code J7301 and deleted\ncode J7302 from this list.']
+  Row 8: ['04/21/2016', 'Attachment A', 'Removed Revenue Code “RC0302” which was inadvertently left\nin during revision process']
+  Row 9: ['11/1/18', 'All Sections and\nAttachments', 'Replaced Medicaid FP and “Be Smart” with FP Medicaid.\nReplaced regular Medicaid with traditional Medicaid. Removed\nclaim submission instructions. Removed Revenue Code and ICD-\n10 PCS Procedure code lists. “Should” changed to “shall.”']
+  Row 10: ['11/1/18', 'Section 1.0', 'Clarified the description and removed statute 42 U.S.C.\n1396d(a)(4)(C).']
+  Row 11: ['11/1/18', 'Subsection 1.1.1', 'Clarified language. Removed, “Family Planning (Medicaid FP).”']
+  Row 12: ['11/1/18', 'Subsection 1.1.2', 'Clarified the language defining “Be Smart” Family Planning\nMedicaid.']
+  Row 13: ['11/1/18', 'Subsection 2.1.2', 'Clarified the eligibility criteria. Removed, “not sterilized,” per\nCMS guidance. Removed unnecessary language.']
+  Row 14: ['11/1/18', 'Subsection 2.2.4', 'Updated 10A NCAC 21B.0302 and replaced with 10A NCAC\n23E.0102. Clarified language.']
+  Row 15: ['11/1/18', 'Subsection 2.2.5', 'Removed Presumptive Eligibility related information.']
+  Row 16: ['11/1/18', 'Subsection 3.2', 'Clarified language.']
+  Row 17: ['11/1/18', 'Subsection 3.2.1', 'Clarified language. Liletta was added to section 3.2.1 but was\nalready covered device. Updated Plan B to Plan B One Step.\nUpdated Attachment A to C. Added ultrasounds as a covered\nservice for MAFDN beneficiaries.']
+  Row 18: ['11/1/18', 'Subsection 3.2.2', 'Clarified language and removed unnecessary language.']
+  Row 19: ['11/1/18', 'Subsection 4.2.1', 'Clarified language. Ultrasounds are covered for MAFDN\nbeneficiaries if there is concern that the IUD is malpositioned.']
+  Row 20: ['11/1/18', 'Subsection 4.2.2', 'Clarified language regarding referral for services not covered by\nFP Medicaid. Clarified language.']
+  Row 21: ['11/1/18', 'Subsection 4.2.3', 'Clarified language.']
+  Row 22: ['11/1/18', 'Subsection 5.1, 5.2.1\nand 5.2.2', 'Clarified language.']
+
+=== Page 13, Table 1 ===
+  Row 0: ['11/1/18', 'Subsection 5.3, 5.4\nand 5.5', 'Clarified language regarding limitations and removed\nunnecessary language.']
+  Row 1: ['11/1/18', 'Section 6.0', 'Removed unnecessary language. Clarified language regarding\nbilling a Medicaid beneficiary.']
+  Row 2: ['11/1/18', 'Subsection 7.1', 'Removed unnecessary language.']
+  Row 3: ['11/1/18', 'Attachment A', '(B1) Clarified language. Added diagnosis codes T83.32XA,\nZ00.01, Z01.411, Z01.419, Z30.015, Z30.016, Z30.017, Z30.44,\nZ30.45, Z30.46, Z31.69, Z32.01, Z32.02, N76.0, N76.1, N76.2,\nN76.3. Removed diagnosis codes T83.32XD, T83.32XS.\nRemoved ICD-10 PCS Code list. Clarified that providers and\nbeneficiaries should refer to Clinical Policy 1E-3 Sterilization\nProcedures guidance on sterilization procedures. NCHC\nbeneficiaries are not eligible for sterilization procedures.” (C)\nHCPCS Q0111 removed from this section, as it is a duplicate\nprocedure of CPT 87210. Removed unnecessary language. (C1)\nClarified language and clarified that providers and beneficiaries\nshould refer to Clinical Policy 1E-3 Sterilization Procedures\nguidance on sterilization procedures. NCHC beneficiaries are not\neligible for sterilization procedures.” (D)Removed unnecessary\nlanguage. (F) (G) (H) Clarified language. (C) Added CPT codes\n36415, 87660, 76830, 76856, 76857, 87480, 87510.']
+  Row 4: ['11/1/18', 'Attachment B', 'Clarified language, removed unnecessary and repetitive language\nthroughout attachment B. Included information regarding when\nan annual exam is required for beneficiaries that are transitioning\nbetween Medicaid programs to FP Medicaid. Included clarifying\ninformation on billing for office visits and services that include an\noffice visit component. Clarified that providers and beneficiaries\nshould refer to Clinical Policy 1A-38, Special Services: After\nHours. Clarified information for beneficiaries who have been\npermanently sterilized or no longer have need for family planning\nservices. (D)Added information related to venipuncture. (F)\nAdded Bacterial vaginosis and related CPT codes. (I) Added\ninformation related to ultrasounds.']
+  Row 5: ['11/1/18', 'Attachment C', 'Language in Attachment C was clarified, repetitive language was\nremoved, and the relevant information was moved to appropriate\nsubsections of the policy.']
+  Row 6: ['11/1/18', 'Attachment D', 'Clarified language and updated medication list. Added\ngentamicin 240mg IM for the treatment of gonorrhea, added\nmedication for the treatment of Bacterial vaginosis.']
+  Row 7: ['11/1/18', 'Attachment E', 'Clarified language and updated medication list.']
+  Row 8: ['11/1/18', 'Attachment F', 'The list of Safety Net providers removed from policy.']
+  Row 9: ['01/01/2019', 'Section 3.2.1 (f)', 'Removed Ortho Evra and added norelgestromin and ethinyl\nestradiol transdermal system']
+
+=== Page 14, Table 1 ===
+  Row 0: ['01/01/2019', 'Attachment A', '(B1) Added diagnosis A63.0. (C1) Removed CPT codes 58340,\n58565 and 74740']
+  Row 1: ['03/15/2019', 'Table of Contents', 'Added, “To all beneficiaries enrolled in a Prepaid Health Plan\n(PHP): for questions about benefits and services available on or\nafter November 1, 2019, please contact your PHP.”']
+  Row 2: ['03/15/2019', 'All Sections and\nAttachments', 'Updated policy template language.']
+  Row 3: ['12/01/2020', 'Related Coverage\nPolicies Section', 'Added 1E-5 Obstetrics, 1E-2, Therapeutic and Non-therapeutic\nAbortions, and 1-H, Telehealth, Virtual Communications and\nRemote Patient Monitoring']
+  Row 4: ['12/01/2020', 'Section 1.1.2', 'Added referral of beneficiary to primary care or a safety net\nprovider for non-family planning services.']
+  Row 5: ['12/01/2020', 'Section 2.1.2', 'Changed plural nouns for “individuals” and “beneficiaries” to\nsingular nouns here and throughout policy.']
+  Row 6: ['12/01/2020', 'Section 2.2.4', 'Removed NC Administrative Code 10A NCAC 23E.0102 -\nrepealed in June 2019.']
+  Row 7: ['12/01/2020', 'Added Subsection\n3.1.1', 'As outlined in Attachment A, select services within this clinical\ncoverage policy may be provided via telehealth. Services\ndelivered via telehealth must follow the requirements and\nguidance set forth in Clinical Coverage Policy 1-H: Telehealth,\nVirtual Patient Communications, and Remote Patient Monitoring.']
+  Row 8: ['12/01/2020', 'Section 3.2.1', 'Added references to Attachments for specific covered criteria.\nAdded that ultrasounds are covered to locate string less IUDs.\nAdded Kyleena IUD for coverage. Removed repetitive language.\nClarified coverage for Emergency Contraception when “available\nfrom the pharmacist with or without a prescription.”']
+  Row 9: ['12/01/2020', 'Section 3.3', 'Added section with United States Preventive Services Task Force\n(USPSTF) Recommendations.']
+  Row 10: ['12/01/2020', 'Section 4.2.1', 'Added reference back to covered services section 3.2.1h to further\nclarify coverage for emergency contraception.']
+  Row 11: ['12/01/2020', 'Section 4.2.2', 'Hepatitis B screening and treatment added as non-covered\nservices. Also added “surgical procedures or hospital services\nrequiring outpatient beneficiary registration other than\nsterilization” as a noncovered item. Clarified removal of IUDs\noutside of the office setting as a noncovered service. Reformatted\ninto lists for readability.']
+  Row 12: ['12/01/2020', 'Section 5.4', 'Removed this section as was duplicate to section 6.0']
+  Row 13: ['12/01/2020', 'Sections 5.5', 'Removed this section as was exact duplication of Sections 6.1.']
+
+=== Page 15, Table 1 ===
+  Row 0: ['12/01/2020', 'Sections 5.6', 'Removed this section as was exact duplication of Section 6.2.']
+  Row 1: ['12/01/2020', 'Section 6.0', 'Moved NC Administrative Code 10A NCAC 22J.0106 reference\nfor Medicaid Billing from Section 5.4 to Section 6.0.']
+  Row 2: ['12/01/2020', 'Attachment A,\nLetter B1', 'Added ICD-10-CM diagnosis codes N41.0, N45.1-N45.3,\nZ72.51-Z72.53 and Z86.19 for coverage related to NAAT testing\nfor Trichomonas Vaginalis. Added ICD-10-CM diagnosis codes\nA49.3, N72, N73.0, N73.1, and N73.9, R36.0, R36.9 and Z86.19\nfor NAAT diagnostic testing for Mycoplasma Genitalium. Added\nICD-10-CM diagnosis codes Z72.51-Z72.53, and Z72.89 for use\nwith general STI screening. Added clarifying language to\nreference to sterilization procedures under table in this section.\nAdded ICD-10-CM diagnosis codes B86 and N89.8 for scabies\ndiagnosis and amine vaginitis screening.']
+  Row 3: ['12/01/2020', 'Attachment A,\nLetter C', 'Added Reference to Attachment B, Letter J for FQHC and RHC\nFamily Planning billing instructions.']
+  Row 4: ['12/01/2020', 'Attachment A,\nLetter C1', 'Removed end dated CPT procedure codes 71010 and 88154.\nRemoved incorrectly entered CPT code 78657 and added correct\nCPT code 76857. Added new covered CPT codes 58661, 87661,\n87563, and 80053. Added new covered HCPCS J7296 to HCPCS\ncode table. Added HIV screening code 87806 that was omitted\nfrom policy previously as a covered MAFDN covered service.\nAlso added CPT code 82120 for amines screening for vaginitis\nand 87220 for KOH test for the diagnosis of scabies to CPT code\ntable. Removed repetitive instruction under table C1 regarding\nsterilization procedures. Added table for CPT Codes Eligible for\nTelehealth Services with Note: Telehealth eligible services may\nbe provided to established patients by the eligible providers listed\nwithin this policy. Added MAFDN approved Revenue Codes\nback to policy.']
+  Row 5: ['12/01/2020', 'Attachment A,\nLetter D', 'Added the following language for telehealth services: Telehealth\nClaims: Modifier GT must be appended to the CPT or HCPCS\ncode to indicate that a\nservice has been provided via interactive audio-visual\ncommunication. This modifier is not\nappropriate for virtual patient communications or remote patient\nmonitoring.']
+  Row 6: ['12/01/2020', 'Attachment A,\nLetter F', 'Added instruction for Outpatient Place of Service, that “the only\nsurgical procedure or hospital services allowed requiring\noutpatient beneficiary registration is sterilization”. Also added\nclarification to specified POS “Office.” Added FQHC and RHC\nplace of services.']
+
+=== Page 16, Table 1 ===
+  Row 0: ['', '', 'Added the following language for telehealth services: “Telehealth\nclaims should be filed with the provider’s usual place of service\ncode(s) and not place of service 02 (Telehealth).”']
+  Row 1: ['12/01/2020', 'Attachment A,\nLetter L', 'Added Comprehensive Metabolic Panel (CMP) for coverage with\nguidelines.']
+  Row 2: ['12/01/2020', 'Attachment B,\nLetter A', 'Changed “FP Medicaid Program” to “FP Medicaid” for policy\nconsistency in this section and throughout policy attachments.\nFormatted with lists for readability.']
+  Row 3: ['12/01/2020', 'Attachment B,\nLetter B', 'Reformatted into lists for readability.\nAdded the following language requirement for Inter-Periodic\nvisits: Each in-person or telehealth\nencounter will count as one of a beneficiary’s allotted six inter-\nperiodic visits, per 365 days.']
+  Row 4: ['12/01/2020', 'Attachment B,\nLetter C', 'Clarified billing language related to after-office hours services.']
+  Row 5: ['12/01/2020', 'Attachment B,\nLetter D', 'Removed end dated pap test CPT procedure code 88154.\nRemoved pap test as a requirement only at time of annual exam\nand clarified that can be offered at time of annual exam or during\nan inter-periodic visit. Added Comprehensive Metabolic Panel\n(CMP) for coverage with guidelines.']
+  Row 6: ['12/01/2020', 'Attachment B,\nLetter F', 'Created new section for Trichomonas Vaginalis and added\ncoverage for NAAT screening code 87661. Clarified Bacterial\nVaginosis (Gardnerella) and Candida screening section. Removed\nCPT 87660 from this section as this was added to the newly\ncreated Trichomonas section. Added coverage for new CPT code\n87563 for diagnostic Mycoplasma Genitalium testing. Added\nreferral guidelines for interventions in HIV by prophylactic\nprescription meds through the Ready, Set PrEP program. Added\nCPT code 82120 for coverage of amines for vaginitis screening.\nAdded CPT code 87220 for coverage of diagnosis for scabies.']
+  Row 7: ['12/01/2020', 'Attachment B,\nLetter H', 'Removed “Ortho Evra” from contraceptive patch. Removed\nunnecessary wording. Removed “Nuva” and added “vaginal\ncontraceptive” to cover other vaginal rings covered under\nMAFDN.\nAdded Kyleena IUD for coverage.']
+
+=== Page 17, Table 1 ===
+  Row 0: ['12/01/2020', 'Attachment B,\nLetter I', 'Added clarification that no waiting period exists for IUD\nplacement when ultrasound confirms IUD has been expelled.\nRemoved repetitive language.']
+  Row 1: ['12/01/2020', 'Attachment B,\nLetter J', 'Added section for FQHC and RHC “Be Smart” Family Planning\nbilling instructions.']
+  Row 2: ['12/01/2020', 'Attachment, B\nLetter K', 'Letter J. Miscellaneous Billing Instructions became Letter K.']
+  Row 3: ['12/01/2020', 'Attachment C', 'Added coverage for Moxifloxacin, 400mg to Approved FP\nMedicaid STI Medications list.']
+  Row 4: ['12/01/2020', 'Attachment C-\nAddendum to\n11/1/2018 Entry', 'Remainder of Attachment C was combined with Attachment B to\nform Attachment B: FP Medicaid (MAFDN eligible) Billing\nRequirements.']
+  Row 5: ['12/01/2020', 'Attachment D', 'Specified pharmacy program as “Outpatient” pharmacy drug\nprogram.']
+  Row 6: ['12/01/2020', 'Attachment D-\nAddendum to\n11/1/2018 Entry', 'Attachment D became Attachment C: Approved FP Medicaid STI\nMedications List']
+  Row 7: ['12/01/2020', 'Attachment E-\nAddendum to\n11/1/2018 Entry', 'Attachment E became Attachment D: Postoperative Sterilization\nMedication List.']
+  Row 8: ['12/01/2020', 'Attachment F-\nAddendum to\n11/1/2018 Entry', 'Attachment F was removed all together from the policy.']
+  Row 9: ['12/01/2020', 'Added beginning of\nPolicy', 'Added the language “This clinical coverage policy has an\neffective date of November 15, 2020; however, until the end of\nthe public health emergency, the temporary coverage and\nreimbursement flexibilities enabled by NC Medicaid through a\nseries of COVID-19 Special Medicaid Bulletins will remain in\neffect.”']
+  Row 10: ['05/01/2021', 'Section 3.2.1 (h)', 'Removed wording “or without.”']
+  Row 11: ['05/01/2021', 'Section 4.2.1 (d)', 'Removed wording “(for emergency contraception see section\n3.2.1 h).”']
+
+=== Page 18, Table 1 ===
+  Row 0: ['05/01/2021', 'Section 3.2.1 (b)', 'Added “(up to a 12-month supply)” to covered birth control pills.']
+  Row 1: ['05/01/2021', 'Attachment B,\nLetter E', 'Changed allowance of birth control pills for beneficiaries from a\nthree-month supply to a twelve- month supply, dispensed by a\npharmacy.']
+  Row 2: ['05/01/2021', 'Attachment B,\nLetter H', 'Changed allowance of birth control pills for beneficiaries from a\n3-month supply to a 12-month supply, dispensed by a pharmacy.']
+  Row 3: ['05/01/2021', 'Section 3.3 (j.)', 'Added a comma after “Postpartum depression”.']
+  Row 4: ['05/01/2021', 'Attachment A,\nLetter F', 'Made grammar corrections to include punctuation and changing\nthe word “an” to “a” in front of “FP.”']
+  Row 5: ['05/01/2021', 'Attachment B,\nLetter A', 'Made grammar corrections changing the word “an” to “a” in front\nof “MPW.”']
+  Row 6: ['05/01/2021', '', 'Policy Posted 05/06/21 with an amended date of 05/01/2021']
+  Row 7: ['02/15/2023', 'Policy Throughout', 'Edited policy to remove the requirement for a “comprehensive\nannual exam” prior to providing family planning and family\nplanning related services. Added requirement for an “annual\nassessment” prior to performing family planning and family\nplanning services. Defined that an annual assessment is not\nrequired to be a comprehensive preventive medicine exam.\nAnnual exam language changed to “comprehensive preventive\nmedicine exam” to align with AMA CPT language. Made\ndistinctions throughout policy between an annual assessment and\na comprehensive preventive medicine exam.']
+  Row 8: ['02/15/2023', 'Section 1.0', 'Updated the description of service.']
+  Row 9: ['02/15/2023', 'Section 3.2', 'Included law for 42 CFR §441.20.']
+  Row 10: ['02/15/2023', 'Subsection 3.2.1 (c)', 'Added the text “ Insertion of”']
+  Row 11: ['02/15/2023', 'Subsection 3.2.1 (d)', 'Added text “Removal of IUD’s outside of the office. Local Health\nDepartment (LHD), Federally Qualified Health Center (FQHC),\nor Rural Health Clinic (RHC) setting.”']
+  Row 12: ['02/15/2023', 'Subsection 3.2.1(g)', 'Removed specific “Nuvaring” list of contraceptive rings.']
+  Row 13: ['02/15/2023', 'Subsection 3.2.1(i)', 'Added Hepatitis B and Hepatitis C screening and HPV Vaccine\nas covered services.']
+  Row 14: ['02/15/2023', 'Subsection 3.2.1(j)', 'Clarified coverage of treatment for “most” STIs. Clarified\nreference to Attachment C is for FP Medicaid coverage.']
+  Row 15: ['02/15/2023', 'Subsection 3.2.1', 'Added coverage for HPV Gardasil 9 Vaccine. Added text that\ncoverage was available for vaginal rings and patches by\nprescription through a pharmacy.']
+
+=== Page 19, Table 1 ===
+  Row 0: ['02/15/2023', 'Subsection 3.3 (d)', 'Combined chlamydia and gonorrhea USPSTF recommendations.']
+  Row 1: ['02/15/2023', 'Subsection 3.3 (j)', 'Changed text to Obesity: Offer and refer adults and adolescents\nwith a body mass index of 30 or higher (calculated as weight in\nkilograms divided by height in meters squared) to intensive,\nmulticomponent behavioral interventions through their primary\ncare or a safety net provider.']
+  Row 2: ['02/15/2023', 'Subsection 3.3(h)(i)', 'Added United States Preventive Services Task Force (USPSTF)\nRecommendations for HBV and HCV screening.']
+  Row 3: ['02/15/2023', 'Subsection 4.2.2', 'Removed list of service providers and edited language to “their\nprimary care or a safety net provider” for consistency throughout\npolicy.']
+  Row 4: ['02/15/2023', 'Subsection 4.2.2(7)', 'Removed HBV screening as a non-covered service.']
+  Row 5: ['02/15/2023', 'Subsection 4.2.2(8)', 'Added treatment for Hepatitis C as a non-covered service.']
+  Row 6: ['02/15/2023', 'Subsection 4.2.2\n(b)(10)', 'Removal of IUD’s outside of the office.']
+  Row 7: ['02/15/2023', 'Subsection 5.3(a)', 'Changed the language from “annual periodic examination” to\n“comprehensive preventive medicine examination.”']
+  Row 8: ['02/15/2023', 'Subsection 5.3(b)', 'Added requirement for annual office visit assessment prior to\nrendering family planning or family planning related service.']
+  Row 9: ['02/15/2023', 'Subsection 5.3(c)', 'Changed wording from annual exam to annual assessment or\ncomprehensive preventive medicine exam and clarified language\nfor six inter-periodic visits.']
+  Row 10: ['02/15/2023', 'Section 6.3', 'Created section “Provider Billing” and moved note regarding 10A\nNCAC 22J.0106 from Section 6.0 to Section 6.3.']
+  Row 11: ['02/15/2023', 'Attachment A,\nLetter B1', 'Text was changed to Providers serving MAFDN beneficiaries\nmust bill using a primary diagnosis of contraception. ICD-10\ndiagnosis codes in this table were removed so that only primary\nICD-10 diagnosis codes of contraception remained.']
+  Row 12: ['02/15/2023', 'Attachment A,\nLetter C1', 'Text changed to “Providers are limited to the following services\nfor MAFDN beneficiaries: ” Added CPT codes 86704, 86706,\n87340, 87516 and 87517 as covered Hepatitis B screening codes.\nAdded CPT codes 86803, 86804, 87520, 87521 and 87522 as\ncovered Hepatitis C screening codes. Removed CPT code 99201\nas this code is end-dated by AMA. Removed infrequently used\nHIV procedure codes 87390, 87391, 87537, 87538, 87539, and\n87806. Added HPV Gardasil 9 vaccine code 90651 and vaccine\nadministration codes 90460 and 90471 to CPT code table.']
+  Row 13: ['02/15/2023', 'Attachment A,\nLetter F', 'Added Local Health Department (LHD) to Place of Service list.']
+
+=== Page 20, Table 1 ===
+  Row 0: ['02/15/2023', 'Attachment B,\nLetter A', 'Removed CPT codes in the text. Changed requirement of an\nannual exam prior to providing family planning and family\nplanning related services to an annual assessment. Added annual\nassessment requirements and guidelines for referrals when needed\nfor non-family planning preventive and problem services. Added\nrecommendation that a preventive medicine exam should be\noffered after initial contraceptive needs are met. Added\ncomponents of an Annual Assessment based on CMS and OPA\nrecommendations guidance. Added table for annual assessment\noffice visit codes. Removed specific CPT codes from this\nsection.']
+  Row 1: ['02/15/2023', 'Attachment B,\nLetter A, a.- f.', 'Removed CPT codes in the policy.']
+  Row 2: ['02/15/2023', 'Attachment B,\nLetter B', 'Removed end-dated CPT code 99201 from table of inter-periodic\nvisit codes.']
+  Row 3: ['02/15/2023', 'Attachment B,\nLetter D', 'Removed physician as allowed billing provider for pap test.']
+  Row 4: ['02/15/2023', 'Attachment B,\nLetter E', 'Clarified that “pharmacy” providers should not distribute brand\nname drugs when a generic is available.']
+  Row 5: ['02/15/2023', 'Attachment B,\nLetter F', 'Removed HIV screening codes that are infrequently billed.\nRemoved text that state providers are required to report an\nappropriate ICD-10-CM Diagnosis code for HIV Screening and\nSTI screening as the secondary diagnosis code on the claim.”\nAdded Hepatitis B and C screening codes and coverage criteria.\nAdded HPV vaccine coverage criteria.']
+  Row 6: ['02/15/2023', 'Attachment B,\nLetter G', 'Guidance added that referral options should be made available for\nbeneficiaries that do not have a primary care provider.']
+  Row 7: ['02/15/2023', 'Attachment B,\nLetter H', 'Removed the following tables: Birth Control Pills provided by a\nLocal Health Department S4993, Diaphragm Fitting 57170;\nInjectable Drugs J1050, IUDs J7296, J7297, J7298, J7300, J7301,\nImplantable Devices J7307, Norplant Removal 11976.']
+  Row 8: ['02/15/2023', 'Attachment B,\nLetter I', 'Created new section entitled “Other Covered Screenings and\nProcedures” and moved table from Pharmacy Section (Letter E)\nto this section.']
+  Row 9: ['02/15/2023', 'Attachment B,\nLetter J', 'Language clarified for referrals due to IUD complications.']
+  Row 10: ['02/15/2023', 'Attachment B,\nLetter K', 'Added guidance that FQHC providers should bill the FP modifier\non their evaluation and management procedure codes.']
+  Row 11: ['02/15/2023', 'Attachment B,\nLetter L', 'Removed referral to DSS in the event a beneficiary doesn’t have\nfamily planning needs.']
+
+=== Page 21, Table 1 ===
+  Row 0: ['4/15/2023', 'All Sections and\nAttachment(s)', 'Updated policy template language due to North Carolina\nHealth Choice Program’s move to Medicaid. Policy posted\n4/15/2023 with an effective date of 4/1/2023.']
+  Row 1: ['04/15/2025', 'Section 1.1', 'Used current CPT language for Comprehensive Preventive\nMedicine evaluation used throughout policy\nRemoved FP Medicaid serves eligible beneficiaries regardless\nof their age or gender\nc. Pharmacist per state protocol']
+  Row 2: ['04/15/2025', 'Section 2.2.2', 'Changed Undocumented Aliens to non-citizens to comply with\ncurrent standard language']
+  Row 3: ['04/15/2025', 'Section 3.2.1', '(2) Added Oral Contraceptives and transdermal patches per the\nNorth Carolina State Health Director’s Standing Order\n(3) Added emergency contraception\n(4) Clarified the removal of LARC’s\n(5) Added condoms, spermicides and vaginal rings\n(7) Added “listed in Clinical Coverage Policy 9 Outpatient\nPharmacy Program”\n(12) Added that agencies are to follow the most current HPV\nrecommendations set forth by the ACIP\n(13) Addition of four depression screenings per 365 rolling\ncalendar days as covered services\n(14) Covered sterilization procedures']
+  Row 4: ['04/15/2025', 'Section 3.2.2', 'Added None Apply']
+  Row 5: ['04/15/2025', 'Section 3.3', 'Added NC Medicaid encourages family planning providers to\noffer screening for hypertension, sexually transmitted diseases\nand infections and cancer as part of current A and B USPSTF\nrecommendations. Deleted specific screenings.']
+  Row 6: ['04/15/2025', 'Section 4.2', 'Clarified Medicaid for Family Planning Medicaid and added\ncervical caps']
+  Row 7: ['04/15/2025', 'Section 4.2.2 5.', 'Added “medically necessary removal of contraceptive devices”\nand removed “or complications caused by or following a family\nplanning procedure”\nRemoved “Complications”\nClarified under note what hospital costs are excluded from the\nbeneficiary’s responsibility']
+  Row 8: ['04/15/2025', 'Section 5.3', '(a) Clarified that FP beneficiaries are allowed one\nComprehensive Preventive evaluation or one Annual\nAssessment per 365 calendar days. Added “If the beneficiary\nhas had a comprehensive preventive medicine evaluation or']
+
+=== Page 22, Table 1 ===
+  Row 0: ['', '', 'postpartum exam in the previous 365 days, the beneficiary is\nnot required to have another comprehensive evaluation prior to\nreceiving Family Planning services.']
+  Row 1: ['04/15/2025', 'Attachment A', 'B.1.removed terms male and female\nC.1. Added CPT codes 58562 effective date 05/01/2025,\nAdded 87626 and 96127 to table.\nAdded A4267 and A4268 to the HCPCS table effective date\n09/01/2024\nAdded: Note: Male and female condoms are reimbursable in\nthe office setting. Spermicides are available from the pharmacy\nwith a prescription.\nAdded Inter-periodic visits include behavioral health screening\nF. Outpatient services may be used for IUD removal and\nUltrasounds for IUD complications and missing strings']
+  Row 2: ['04/15/2025', 'Attachment B', 'Clarified Annual (Focused) and Comprehensive Preventive\nEvaluation are billed using the current AMA CPT definitions\nfor each.\nClarified what is allowed at the Initial Assessment and that no\nclaim is filed if beneficiary does not qualify for services\n(B) Clarified that HPV may be administered at inter-periodic\nvisits.\n(Encounter for depression screening) or Diagnosis code Z13.32\n(Encounter for screening for maternal depression) in\ncombination with CPT code 96127 (Brief emotional or\nbehavioral assessment with scoring and documentation, per\nstandardized instrument) in addition to a family planning\ndiagnosis.\nAdded point of care rapid HIV and syphilis coverage effective\ndate 01/01/24\nAdded the coverage of condoms and spermicides\nClarified the billing of code 99211\nRemoved specific facilities for IUD complications']
+  Row 3: ['04/15/2025', 'Attachment C', 'Clarified language']
+
+=== Page 23, Table 1 ===
+  Row 0: ['ICD-10-CM Codes', '']
+  Row 1: ['Z30.011\nZ30.012\nZ30.013\nZ30.014\nZ30.015\nZ30.016\nZ30.017\nZ30.018\nZ30.019\nZ30.02\nZ30.09\nZ30.2\nZ30.40\nZ30.41', 'Z30.42\nZ30.430\nZ30.431\nZ30.432\nZ30.433\nZ30.44\nZ30.45\nZ30.46\nZ30.49\nZ30.8\nZ30.9\nZ31.61\nZ31.69']
+
+=== Page 24, Table 1 ===
+  Row 0: ['CPT Code(s)', None, None, None, '']
+  Row 1: ['00851\n00921\n00952\n11976\n11981\n11982\n11983\n17000\n36415\n54050\n56501\n57170\n58300\n58301\n58562\n58600\n58615\n58661\n58670\n58671\n76830\n76856\n76857\n80053\n81000\n81001\n81002\n81003\n81005\n81007', '81015\n81025\n82120\n84702\n84703\n85013\n85014\n85018\n85027\n86592\n86593\n86631\n86632\n86689\n86694\n86695\n86696\n86701\n86702\n86703\n86704\n86706\n86780\n86803\n86804\n87070\n87071\n87081\n87110', '87207\n87210\n87220\n87270\n87273\n87274\n87285\n87320\n87340\n87389\n87480\n87490\n87491\n87492\n87510\n87516\n87517\n87520\n87521\n87522\n87528\n87529\n87530\n87534\n87535\n87536\n87563\n87590\n87591', '87592\n87623\n87624\n87625\n87626\n87660\n87661\n87798\n87810\n87850\n88141\n88142\n88143\n88147\n88148\n88150\n88152\n88153\n88155\n88164\n88165\n88166\n88167\n88174\n88175\n88302\n89310\n90460\n90471\n90651', '93000\n93010\n96372\n96127\n99050\n99051\n99053\n99202\n99203\n99204\n99205\n99211\n99212\n99213\n99214\n99215\n99241\n99242\n99243\n99244\n99245\n99383\n99384\n99385\n99386\n99387\n99393\n99394\n99395\n99396\n99397']
+
+=== Page 25, Table 1 ===
+  Row 0: ['CPT Codes Eligible for Telehealth Services', None]
+  Row 1: ['99211', '99241']
+  Row 2: ['99212', '99242']
+  Row 3: ['99213', '99243']
+  Row 4: ['99214', '99244']
+  Row 5: ['99215', '99245']
+
+=== Page 25, Table 2 ===
+  Row 0: ['HCPCS Code(s)', None]
+  Row 1: ['A4267\nA4268\nJ1050\nJ7296\nJ7297\nJ7298', 'J7300\nJ7301\nJ7307\nS4993']
+
+=== Page 25, Table 3 ===
+  Row 0: ['Revenue Code(s)', None, None, None]
+  Row 1: ['RC0250\nRC0251\nRC0252\nRC0254\nRC0255\nRC0258\nRC0259\nRC0270\nRC0271\nRC0272', 'RC0278\nRC0279\nRC0300\nRC0301\nRC0305\nRC0306\nRC0307\nRC0309\nRC0310\nRC0311', 'RC0312\nRC0314\nRC0319\nRC0320\nRC0324\nRC0329\nRC0360\nRC0361\nRC0369\nRC0370', 'RC0371\nRC0372\nRC0379\nRC0490\nRC0499\nRC0510\nRC0519\nRC0730\nRC0739']
+
+=== Page 28, Table 1 ===
+  Row 0: ['Annual Assessment Office Visit Codes', None]
+  Row 1: ['99202\n99203\n99204\n99205', '99212\n99213\n99214\n99215']
+
+=== Page 29, Table 1 ===
+  Row 0: ['Comprehensive Preventive Medicine\nEvaluation Codes', None]
+  Row 1: ['99383\n99384\n99385\n99386\n99387', '99393\n99394\n99395\n99396\n99397']
+
+=== Page 30, Table 1 ===
+  Row 0: ['Inter-Periodic Visit', None]
+  Row 1: ['99202\n99203\n99204\n99205', '99211\n99212\n99213\n99214\n99215']
+
+=== Page 30, Table 2 ===
+  Row 0: ['Office After-Hours Visit']
+  Row 1: ['99050\n99051\n99053']
+
+=== Page 30, Table 3 ===
+  Row 0: ['Urinalysis']
+  Row 1: ['81000 81003\n81001 81005\n81002 81007\n81003 81015']
+
+=== Page 31, Table 1 ===
+  Row 0: ['Blood Count']
+  Row 1: ['85013 85018\n85014 85027']
+
+=== Page 31, Table 2 ===
+  Row 0: ['Pap Test', None]
+  Row 1: ['88141\n88142\n88143\n88147\n88148\n88150\n88152\n88153', '88155\n88164\n88165\n88166\n88167\n88174\n88175']
+
+=== Page 31, Table 3 ===
+  Row 0: ['Pregnancy Tests']
+  Row 1: ['81025\n84702\n84703']
+
+=== Page 31, Table 4 ===
+  Row 0: ['Comprehensive Metabolic Panel']
+  Row 1: ['80053']
+
+=== Page 32, Table 1 ===
+  Row 0: ['HIV Screening', None]
+  Row 1: ['86689\n86701\n86702\n86703\n87389', '87534\n87535\n87536']
+
+=== Page 32, Table 2 ===
+  Row 0: ['Hepatitis B Screening']
+  Row 1: ['86704\n86706\n87340\n87516\n87517']
+
+=== Page 32, Table 3 ===
+  Row 0: ['Hepatitis C Screening']
+  Row 1: ['86803\n86804\n87520\n87521\n87522']
+
+=== Page 33, Table 1 ===
+  Row 0: ['Point of care testing (POC)', None]
+  Row 1: ['86780', '86703']
+
+=== Page 33, Table 2 ===
+  Row 0: ['Gonorrhea', None]
+  Row 1: ['87590\n87591', '87592\n87850']
+
+=== Page 33, Table 3 ===
+  Row 0: ['Syphilis']
+  Row 1: ['86592\n86593']
+
+=== Page 33, Table 4 ===
+  Row 0: ['General STI Screening']
+  Row 1: ['87081\n87210']
+
+=== Page 34, Table 1 ===
+  Row 0: ['86631\n86632\n87110\n87270\n87320', '87490\n87491\n87492\n87810']
+  Row 1: ['Herpes', None]
+  Row 2: ['86694\n86695\n86696\n87207\n87273', '87274\n87528\n87529\n87530']
+
+=== Page 34, Table 2 ===
+  Row 0: ['Trichomonas Vaginalis']
+  Row 1: ['87210\n87660\n87661']
+
+=== Page 34, Table 3 ===
+  Row 0: ['Treponema']
+  Row 1: ['86780\n87285']
+
+=== Page 34, Table 4 ===
+  Row 0: ['Papillomavirus']
+  Row 1: ['87623\n87624\n87625']
+
+=== Page 34, Table 5 ===
+  Row 0: ['Bacterial Vaginosis (Gardnerella and Candida)']
+  Row 1: ['87210\n87480\n87510\n82120']
+
+=== Page 34, Table 6 ===
+  Row 0: ['Scabies']
+  Row 1: ['87220']
+  Row 2: ['Miscellaneous']
+  Row 3: ['87798']
+
+=== Page 34, Table 7 ===
+  Row 0: ['Mycoplasma Genitalium']
+  Row 1: ['87563']
+
+=== Page 36, Table 1 ===
+  Row 0: ['Other Screenings or Procedures', None]
+  Row 1: ['17000\n54050\n56501\n87070', '87071\n93000\n93010\n96372']
+
+=== Page 38, Table 1 ===
+  Row 0: ['Medications for the FP Medicaid program require a prescription. All prescriptions for STI\nmedications must document the appropriate ICD-10-CM code.\nFor additional information regarding Sexually Transmitted Diseases (STDs), refer to the Center\nfor Disease Control and Prevention website at https://www.cdc.gov/std', None]
+  Row 1: ['FP Medi caid approved medications', None]
+  Row 2: ['STI Diagnosis', '']
+  Row 3: ['Herpes', 'Acyclovir 200mg, 400mg, 800 mg\nFamciclovir 125mg, 250mg, 500mg\nValacyclovir 500mg, 1.0gm']
+  Row 4: ['Chlamydia', 'Azithromycin, 250mg, 500mg, 1gm\nDoxycycline 100mg\nErythromycin 250mg, 400mg, 500mg, 800mg\nOfloxacin 200mg, 300mg, 400mg\nLevofloxacin 500mg\nT etracycline 250mg, 500mg']
+  Row 5: ['Syphilis', 'Azithromycin 1gm\nBenzathine penicillin G 2.4 million units\nCeftriaxone 250mg\nCiprofloxacin 500mg\nDoxycycline 100mg\nErythromycin 500mg\nTetracycline 500mg']
+  Row 6: ['Gonorrhea', 'Azithromycin 250mg, 500mg, 1gm\nCefixime 400mg\nCeftriaxone 125 mg, 250mg, 500mg\nCefotaxime 500mg\nCefoxitin 2gm with probenecid 1gm\nCiprofloxacin 250mg, 500mg\nCefpodoxime 200 mg\nDoxycycline 100 mg\nGatifloxacin 400mg\nLevofloxacin 250mg\nOfloxacin 400mg\nSulfamethoxazole/TMP\nGentamicin 240mg IM']
+
+=== Page 39, Table 1 ===
+  Row 0: ['Other Sexually\nTransmitted Infections', 'Azithromycin 250mg, 500mg, 1gm\nDoxycycline 100mg\nErythromycin 500mg, 800mg\nGatifloxacin 400mg\nLevofloxacin 250mg, 500mg\nOfloxacin 200mg, 300mg, 400mg\nM oxifloxacin 400 mg']
+  Row 1: ['Candidiasis', 'Butoconazole 2% cream\nFluconazole 50mg, 100mg, 150mg, 200mg\nMiconazole 200mg suppository\nTerconazole 80mg suppository\nTerconazole cream 0.4%, 0.8%']
+  Row 2: ['Trichomoniasis', 'Metronidazole 250mg, 500mg, 750mg, 2gm\nTinidazole 2000mg']
+  Row 3: ['Bacterial vaginosis', 'Metronidazole 250mg, 500mg\nMetronidazole gel 0.75%\nClindamycin cream 2%\nClindamycin oral 150mg, 300mg\nClindamycin ovules 100mg\nTinidazole 2gm, 1 gm, 500mg, 250mg']
+  Row 4: ['Pubic Louse', 'Permethrin 5% cream\nLindane 1% shampoo']
+
+=== Page 40, Table 1 ===
+  Row 0: ['Sterilization Procedure (vasectomy and tubal ligation)']
+  Row 1: ['Antibiotics for sterilization procedures']
+  Row 2: ['Amox TR-K CLV 500-125mg, 1000-62.5\nAmoxicillin 250mg, 500mg\nCephalexin 250mg, 500mg\nCiprofloxacin HCL 250mg, 500mg\nDoxycycline 100mg\nErythromycin ES 400mg\nLevofloxacin 500mg\nMetronidazole 500mg\nPenicillin VK 500mg\nSulfamethoxazole/TMP DS\nAzithromax 250mg']
+  Row 3: ['Analgesics for sterilization procedures']
+  Row 4: ['Acetaminophen/Cod #2, #3\nHydrocodone/apap 5/325, 5/500, 7.5/325, 7.5/500, 7.5/650, 7.5/750, 10/325, 10/500,\n10/650, 10/660, 10/750\nHydrocodone/IBU 2.5/200, 5/200, 7.5/200, 10/200\nIbuprofen 400mg, 600mg, 800mg\nKetorolac 10mg\nNaproxen 500mg\nNaproxen Sodium 550mg\nOxycodone 5mg\nOxycodone w/apap 2.5/325, 5/325, 5/325, 7.5/325, 7.5/500, 10/325, 10/650']
+  Row 5: ['Antiemetic for sterilization procedures']
+  Row 6: ['Promethazine 25mg']
+
